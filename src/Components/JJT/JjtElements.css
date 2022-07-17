@@ -1,0 +1,265 @@
+.Bg4{
+    background-image: url("../../images/pattern2.png");
+    background-size: cover;
+    height: 125vh;
+    background-color: #132B3B;
+    /* position: relative; */
+    display: flex;
+}
+
+.max-width{
+    width: 100%;
+    display: flex;
+  }
+
+
+.kotak{
+    max-width: 100%;
+    position: absolute;
+    top: 2570px;
+    
+    
+    height: 100px;
+
+}
+.Awan3{
+    position: absolute;
+    width: 230px;
+    height: 18px;
+    left: -37px;
+    top: 885px;
+}
+
+.kotak1{
+position: relative;
+width: 284px;
+height: 65px;
+left: 0;
+top: 0;
+background: #F26628;
+border-radius: 0px 45px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+z-index: 10;
+}
+
+.jjt1{
+    position: absolute;
+    width: 222px;
+    height: 28px;
+    left: 30px;
+    top: 15px;
+    
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;  
+    color: #FFFFFF;
+    z-index: 20;
+}
+
+.kotak2{
+    position: relative;
+    width: 1050px;
+    height: 600px;
+    padding: auto;;
+    background: #224860;
+    border-radius: 60px;
+    padding: 20px 10px 20px 10px;
+    box-shadow: 10px 10px  #0C2434;
+    top:170px;
+    justify-content: center;
+    align-items: center;
+    left: 235px;
+}
+
+.kotak3{
+    position: relative;
+    width: 1000px;
+    height: 550px;
+    padding: auto;;
+    background: url(../../images/Bgjjt.png);
+    border-radius: 45px;
+    padding: 20px 10px 20px 10px;
+    bottom: 415px;
+    justify-content: center;
+    align-items: center;
+    left: 260px;
+    }
+
+
+    @media screen and (max-width: 500px) {
+        .Bg4{
+            background-image: url("../../images/pattern2small.png");
+            background-size: cover;
+            height: 85vh;
+            width: 100%;
+            background-color: #132B3B ;
+            /* position: relative; */
+            display: flex;
+            overflow-y: visible;
+        }
+    
+        .max-width{
+            width: 100%;
+            display: flex;
+          }
+
+        .kotak{
+            max-width: 100%;
+            position: relative;
+            width: 370px;
+            /* background-color: #fafafa; */
+            left: 20px;
+            height: 600px;
+            top: 3px;
+           
+        }
+    
+        .kotak2{
+            position: relative;
+            width: 250px;
+            height: 250px;
+            padding: auto;;
+            background: #224860;
+            border-radius: 60px;
+            box-shadow: 10px 10px  #0C2434;
+            top: 35px;
+            justify-content: center;
+            align-items: center;
+            left: 60px;
+            z-index: 2;
+            }
+    
+            .kotak3{
+                position: relative;
+                width: 220px;
+                height: 220px;
+                padding: auto;;
+                background: #0C2434;
+                border-radius: 60px;
+                bottom: 200px;
+                justify-content: center;
+                align-items: center;
+                left: 75px;
+                z-index: 3;
+                
+                }
+    
+        .kotak1{
+            
+            position: absolute;
+            width: 124px;
+            height: 50px;
+            left: 0;
+            top: 0;
+            background: #F26628;
+            border-radius: 0px 45px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            z-index: 10;
+        }
+
+        .jjt1{
+            position: absolute;
+            width: 120px;
+            height: 28px;
+            left: 5px;
+            top: 10px;
+            
+            font-family: 'Gill Sans MT';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 28px;  
+            color: #FFFFFF;
+            z-index: 20;
+        }
+
+        .Awan3{
+            position: relative;
+            top: 500px;
+            width: 230px;
+            height: 118px;
+            left: -90px;
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+        .Bg4{
+            width: auto;
+            float: none;
+            width: 100%;
+        }
+
+        .max-width{
+            width: 100%;
+            display: flex;
+          }
+
+        .kotak{
+            position: absolute;
+            left: 0px;
+            width: 1200px;
+            height: 400px;
+            margin-top: 30px;
+        }
+
+        .kotak2{
+
+            bottom: 800px;
+            left: 130px;
+            
+        }
+
+        .kotak3{
+            left: 150px;
+        }
+
+        .kotak1{
+            position: absolute;
+        }
+
+    }
+
+    @media screen and (max-width:1025px) {
+      .Bg4{
+        width: 0;
+      }
+
+      .max-width{
+        width: 100%;
+        display: flex;
+        
+      }
+
+      .kotak{
+        left: -150px;
+      }
+    }
+    
+
+
+
+    @media screen and (max-width:1440px) {
+        .Bg4{
+            width: auto;
+            float: none;
+            width: 102%;
+        }
+
+        .max-width{
+            width: 100%;
+            display: flex;
+          }
+        
+        .kotak{
+            top:2670px;
+        }
+
+        .Awan3{
+            top: 920px;
+        }
+    }
+
+

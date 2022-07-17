@@ -1,0 +1,41 @@
+
+App {
+  text-align: center;
+  height: 500px;
+}
+
+
+
+.scrollTop {
+  position: fixed;
+  background: #FAFAFA;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 45px;
+  right: 100px;
+  bottom: 50px;
+  align-items: left;
+  height: 90px;
+  justify-content: flex-end;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 5;
+  font-weight: 800;
+  color: #F26628 ;
+
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

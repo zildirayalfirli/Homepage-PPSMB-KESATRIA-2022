@@ -1,0 +1,28 @@
+.Bg10{
+    background-image: url("../images/Bg2.png");
+    background-size: cover;
+    height: 135vh;
+    background-color: #132B3B;
+    /* position: relative; */
+    display: flex;
+}
+
+@media screen and (max-width:1025px) {
+    .max-width{
+      width: 100%;
+      display: flex;
+    }
+
+    .Bg10{
+      width: auto;
+      float: none;
+      width: 190%;
+      height: 129vh;
+    }
+}
+@media screen and (max-width:1440px) {
+    .Bg10{width: auto;
+    float: none;
+    width: 102%;
+    }
+  }

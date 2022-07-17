@@ -1,0 +1,275 @@
+.Bg2{
+    background-image: url("../../images/pattern2.png");
+    background-size: cover;
+    height: 125vh;
+    background-color: #132B3B ;
+    /* position: relative; */
+    display: flex;
+    overflow-y: visible;
+    
+    
+}
+.max-width{
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+  }
+.box{
+    max-width: 100%;
+    position: absolute;
+    width: 90%;
+    /* background-color: #fafafa; */
+    left: 50px;
+    height: 820px;
+    top: 900px;
+}
+
+.box5{
+    max-width: 100%;
+    position: absolute;
+    width: 100%;
+    /* background-color: #000; */
+    height: 1200px;
+    top: 900px;
+}
+
+.box2{
+    position: relative;
+    width: 1050px;
+    height: 600px;
+    padding: auto;;
+    background: #224860;
+    border-radius: 60px;
+    padding: 20px 10px 20px 10px;
+    box-shadow: 10px 10px  #0C2434;
+    bottom: 210px;
+    justify-content: center;
+    align-items: center;
+    left: 185px;
+    }
+
+.box3{
+    position: relative;
+    width: 1000px;
+    height: 550px;
+    padding: auto;;
+    background: #0C2434 ;
+    border-radius: 60px;
+    padding: 20px 10px 20px 10px;
+    bottom: 785px;
+    justify-content: center;
+    align-items: center;
+    left: 210px;
+    
+    }
+
+.box:hover {
+    transform: scale(1.08) ;
+    transition: all 0.4s 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.video{
+    max-width: 100%;
+    align-items: center;
+    z-index: 10;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+
+.teks1{
+    margin-top: 80px;
+    font-size: 48px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fafafa;
+}
+
+.teks2{
+    font-size: 32px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fafafa;
+}
+
+
+
+.Awan1{
+position: relative;
+width: 230px;
+height: 118px;
+left: 1090px;
+bottom: 120px;
+/* background-color: black; */
+z-index: 99;
+}
+
+.Awan2{
+    width: 389px;
+    height: 206px;
+    position: relative;
+    z-index: 99;
+    top: 600px;
+    left: 14px;
+}
+
+.Awan20{
+    width: 389px;
+    height: 206px;
+    position: relative;
+    z-index: 99;
+    top: 840px;
+    left: -220px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .Bg2{
+        background-image: url("../../images/pattern2small.png");
+        background-size: cover;
+        height: 85vh;
+        width: 100%;
+        background-color: #132B3B ;
+        /* position: relative; */
+        display: flex;
+        overflow-y: visible;
+    }
+
+    .box{
+        max-width: 100%;
+        position: relative;
+        width: 370px;
+        /* background-color: #fafafa; */
+        left: 20px;
+        height: 600px;
+        top: 3px;
+       
+    }
+
+    .box2{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        padding: auto;;
+        background: #224860;
+        border-radius: 60px;
+        box-shadow: 10px 10px  #0C2434;
+        bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        left: 60px;
+        z-index: 2;
+        }
+
+        .box3{
+            position: relative;
+            width: 220px;
+            height: 220px;
+            padding: auto;;
+            background: #0C2434;
+            border-radius: 60px;
+            bottom: 285px;
+            justify-content: center;
+            align-items: center;
+            left: 75px;
+            z-index: 3;
+            }
+
+        .video{
+            display: none;
+        }
+
+        .Awan1{
+            position: relative;
+            width: 145px;
+            height: 75px;
+            left: 220px;
+            bottom: 0px;
+            /* background-color: black; */
+            z-index: 1;
+            }
+
+        .Awan2{
+            width: 243px;
+            height: 128px;
+            right: 15px;
+            top: 350px;
+            position: relative;
+            /* background-color: black; */
+            z-index: 1;
+        }
+
+        .box5{
+            max-width: 100%;
+            position: absolute;
+            width: 200px;
+            /* background-color: #000; */
+            height: 150px;
+            top: 1450px;
+        }
+
+        .Awan20{
+            display: none;
+        }
+}
+
+@media screen and (max-width:1440px) {
+    .max-width{
+      width: 100%;
+      display: flex;
+    }
+
+    .Bg2{
+      width: auto;
+      float: none;
+      width: 102%;
+    }
+
+    .box{
+        top:950px;
+    }
+}
+
+    @media screen and (max-width: 1280px) {
+  
+
+       .max-width{
+        width: 100%;
+        display: flex;
+      }
+      .box{
+        left: -50px;
+      }
+    .Awan1{
+        left: 1010px;
+    }
+    .Awan20{
+        top: 900px;
+    }
+      
+    }
+
+    @media screen and (max-width:1025px) {
+        .max-width{
+          width: 100%;
+          display: flex;
+        }
+    
+        .Bg2{
+          
+          
+          width: 120%;
+          height: 109vh;
+        }
+
+        .box{
+            left: -90px;
+        }
+    }

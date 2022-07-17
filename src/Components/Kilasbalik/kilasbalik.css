@@ -1,0 +1,178 @@
+.Bg9{
+    display: flex;
+}
+
+.kotak4{
+    max-width: 100%;
+    height: 600px;
+    width: 100%;
+   position: absolute;
+   /* background-color: #0C2434; */
+}
+
+.kotak5{
+    position: relative;
+    width: 494.56px;
+    height: 354.52px;
+    padding: auto;
+    background: #224860;
+    border-radius: 60px;
+    padding: 20px 10px 20px 10px;
+    box-shadow: 10px 10px  #0C2434;
+    top:140px;
+    justify-content: center;
+    align-items: center;
+    left: 235px;
+}
+
+.Awan5{
+    position: absolute;
+    width: 389px;
+    height: 206px;
+    left: -85px;
+}
+
+.kotak7{
+    position: absolute;
+width: 284px;
+height: 65px;
+left: 0;
+top: 0;
+background: #F26628;
+border-radius: 0px 45px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+z-index: 10;
+}
+
+.kb{
+    position: absolute;
+    width: 222px;
+    height: 28px;
+    left: 30px;
+    top: 15px;
+    
+    font-family: 'Gill Sans MT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;  
+    color: #FFFFFF;
+    z-index: 20;
+}
+
+.kotak8{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 600px;
+    background: #FAFAFA;
+    box-shadow: 5px 2px #F26628;
+    border-radius: 35px;
+    top: 300px;
+}
+
+.logo10{
+   position: absolute;
+   top: 8px;
+   left: 20px;
+}
+
+.kotak9{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 300px;
+    background: #FAFAFA;
+    box-shadow: 5px 2px #F26628;
+    border-radius: 35px;
+    top:200px;
+}
+
+.logo11{
+   position: absolute;
+   top: 16px;
+   left: 12px;
+   
+}
+
+.kotak13{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 100px;
+    background: #FAFAFA;
+    box-shadow: 5px 2px #F26628;
+    border-radius: 35px;
+    top:250px;
+    
+}
+
+
+.logo12{
+   position: absolute;
+   top: 16px;
+   left: 12px;
+
+}
+
+.kotak11{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 400px;
+    background: #FAFAFA;
+    box-shadow: 5px 2px #F26628;
+    border-radius: 35px;
+    top: 500px;
+}
+
+.logo13{
+   position: absolute;
+   top: 15px;
+   left: 16px;
+   
+
+}
+
+.kotak12{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 500px;
+    background: #FAFAFA;
+    box-shadow: 5px 2px #F26628;
+    border-radius: 35px;
+    top: 90px;
+}
+
+.logo14{
+   position: absolute;
+   top: 8px;
+   left: 15px;
+
+}
+
+@media screen and (max-width:1440px) {
+    .kotak9{
+       
+        
+        left: 1100px;
+          
+    }
+  }
+
+  @media screen and (max-width:1280px) {
+    .kotak8{
+       
+        left: 100px;
+          
+    }
+
+    .kotak9{
+        left: 900px;
+    }
+
+    .kotak12{
+        left: 750px;
+    }
+  }

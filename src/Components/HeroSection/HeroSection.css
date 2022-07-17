@@ -1,0 +1,454 @@
+img{
+    max-width: 100%;
+}
+
+.Bg1{
+    background-image: url("../../images/Bg1.png");
+    background-size: cover;
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    z-index: -1;
+}
+
+.sizing{
+    max-width: 100%;
+    max-height: 100%;
+    width: 1550px;
+    height: 590px;
+    /* background: black; */
+    position: relative;
+    bottom: -70px;
+}
+
+.max-width{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
+
+.mascot{
+position: relative;
+width: 650px;
+height: 224px;
+left: 100px;
+top:30px;
+
+}
+
+.logo2 {
+  position: relative;
+  width: 405px;
+  height: 25px;
+  right: -1020px;
+  top: -170px;
+    
+}
+
+.brand{
+position: relative;
+width: 571px;
+height: 148px;
+right: -890px;
+top: 190px;
+font-family: 'Gill Sans MT';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 74px;
+text-align: center;
+color: white;
+text-shadow: 3px 2px #F26628;
+}
+
+.brand1{
+position: relative;
+width: 571px;
+height: 148px;
+right: -890px;
+top: 35px;
+font-family: 'Gill Sans MT';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 74px;
+text-align: center;
+color: #0C2434;
+}
+
+.scroll{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500; 
+    position: relative;
+    top: -20px;
+    left: 745px;
+    /* background-color: #0C2434; */
+    width: 90px;
+    scroll-behavior: smooth;
+}
+
+.icon-position{
+    position: relative;
+    top: -20px;
+    left: 22px;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .icon-style{
+    height: 40px;
+    width: 20px;
+    color: black;
+    cursor: pointer;
+    animation: updown 1s ease-in-out infinite;
+    transition: all .5s ease-in-out;
+  }
+
+  .icon-style:hover {
+    animation: updown 1s ease-in-out infinite;
+    color: #551B54;
+    
+  }
+
+  @keyframes updown {
+    0%{
+        transform: translateY(0px);
+      }
+     
+      50%{
+        transform: translateY(20px);
+      }
+      
+      100%{
+        transform: translateY(0px);
+      }
+  }
+
+ 
+ 
+  @media screen and (max-width:1440px) {
+    .max-width{
+      width: 100%;
+      display: flex;
+    }
+
+    .Bg1{
+      width: auto;
+      float: none;
+      width: 102%;
+    }
+
+    .scroll{
+      left: 715px;
+    }
+
+    .icon-position{
+      left: 25px;
+    }
+  
+  }
+  
+  @media screen and (max-width:1280px) {
+    .mascot{
+    width: auto;
+    float: none;
+    left: 100px;
+    bottom: 150px;
+    width: 550px;
+    }
+  
+    .max-width{
+      width: 100%;
+      display: flex;
+    }
+  
+    .Bg1{
+      width: auto;
+      float: none;
+      width: 102%;
+      height: 95vh;
+    }
+  
+    .logo2{
+      width: auto;
+      float: none;
+      position: relative;
+      width: 350px;
+      right: -852px;
+      bottom: 760px;
+    }
+  
+    .brand{
+      width: auto;
+      float: none;
+      left: 680px;
+      width: 600px;
+      top: 150px;
+    }
+  
+    .brand1{
+      width: auto;
+      float: none;
+      left: 680px;
+      width: 600px;
+      top: -5px;
+    }
+  
+    .scroll{
+      right: 20px;
+      top: -50px;
+      margin-left: -80px;
+      margin-top: 20px;
+    }
+  
+    .icon-position{
+      margin-right: 5px;
+      top: -90px;
+      margin-top: 50px;
+    }
+  
+    
+  }
+
+  @media screen and (max-width:1024px) {
+    .max-width{
+      width: 100%;
+      display: flex;
+      
+    }
+
+    .Bg1{
+      width: auto;
+      float: none;
+      width: 120%;
+      height: 119vh;
+      
+    }
+
+    .mascot{
+      width: 650px;
+     left: -20px;
+     top: -10px;
+    }
+
+    .scroll{
+      left: 650px;
+      top: 10px;
+    }
+
+    .icon-position{
+      top: -40px;
+      left: 3px;
+    }
+
+    .logo2{
+      width: 400px;
+      top: -190px;
+      left: 750px;
+    }
+
+    .brand1{
+      left: 600px;
+      top: 50px;
+    }
+
+    .brand{
+      left: 600px;
+      top: 205px;
+    }
+  }
+
+
+    @media screen and (max-width: 991px) {
+    
+    .Bg1{
+      background-image: url("../../images/Bgmobile1.png");
+      height: 93vh;
+      width: 100%;
+      background-size: cover;
+    }
+
+    .max-width{
+      width: 100%;
+      display: flex;
+    }
+
+    .mascot{
+      width: 324px;
+      height: 305px;
+      position: relative;
+      bottom: 90px;
+      left: 20px;
+  }
+}
+  
+@media screen and (max-width: 768px) {
+  .Bg1{
+    width: 40%;
+    height: 193vh;
+    
+  }
+
+  .max-width{
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Bg1{
+    background-image: url("../../images/Bgmobile1.png");
+    height: 89vh;
+    background-size: cover;
+  }
+
+  .max-width{
+    width: 100%;
+    display: flex;
+  }
+
+  .mascot{
+    width: 324px;
+    height: 305px;
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+  }
+
+  .logo2{
+    width: 150px;
+    height: 205px;
+    position: relative;
+    top: -30px;
+    left: 40px;
+  }
+
+  .sizing{
+    max-width: 100%;
+    max-height: 100%;
+    width: 340px;
+    height: 650px;
+    /* background: black; */
+    position: relative;
+    left: 20px;
+    top: 90px;
+  }
+
+  
+.brand{
+  justify-content: center;
+  position: relative;
+  /* background-color: #0C2434; */
+  left: 207px;
+  top: -215px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  width: 50px;
+  height: 200px;
+  }
+  
+  .brand1{
+    justify-content: center;
+    position: relative;
+    /* background-color: #0C2434; */
+    left: 210px;
+    top: -420px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    width: 50px;
+    height: 200px;
+  }
+
+  .scroll{
+    display: none;
+    scroll-behavior: smooth;
+}
+
+
+.icon-position{
+  position: absolute;
+  top: 420px;
+  left: 190px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.icon-style{
+  height: 40px;
+  width: 20px;
+  color: black;
+  cursor: pointer;
+  animation: updown 1s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+}
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+    
+  .brand{
+    left: 190px;
+  }
+  
+  .brand1{
+    left: 190px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  
+  .sizing{
+    position: relative;
+    left: 10px;
+    top: 90px;
+  }
+  
+  .mascot{
+    left: 10px;
+  }
+
+  .icon-position{
+    left: 170px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+ .brand{
+  left: 170px;
+ }
+ 
+ .brand1{
+  left: 170px;
+ }
+ .logo2{
+  left: 20px;
+ }
+}
+
+@media screen and (max-width: 395px) {
+  
+  .sizing{
+    position: relative;
+    left: 10px;
+    top: 90px;
+  }
+  
+  .mascot{
+    left: 10px;
+  }
+
+  .icon-position{
+    left: 180px;
+  }
+}
