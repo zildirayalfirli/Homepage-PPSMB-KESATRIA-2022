@@ -21,38 +21,48 @@
     --blue-grey-700: #334e68;
     --blue-grey-800: #243b53;
     --blue-grey-900: #102a43;
-  }
+}
   
   
   
-  .myBg5 {
+.myBg5 {
     display: flex;
     width: 100%;
     /* background-color: #014d40; */
     height: 60vh;
     overflow-x: hidden;
+    background-image: url('../../images/pattern3.png');
+    background-color: #F1F1F1;
     /* background-color: black; */
    
-  }
+}
 
-  .ship{
+.ship{
     max-width: 100%;
     height: 60vh;
     width: 100%;
-   position: relative;
-   /* background-color: #0C2434; */
-   overflow-x: hidden;
-  }
+    position: relative;
+    /* background-color: #0C2434; */
+    overflow-x: hidden;
+}
 
-  .Awan50{
+.Awan50{
     position: absolute;
     width: 359px;
     height: 206px;
     left: 1270px;
     top: 100px;
-    }
+}
+
+.Awan3{
+    position: relative;
+    width: 230px;
+    height: 18px;
+    left: -37px;
+    top: -5px;
+}
   
-  .Container {
+.Container {
     position: relative;
     left: 10px;
     top: 40px;
@@ -65,79 +75,88 @@
     border-radius: 10px;
     height: 40vh;
     box-shadow: 2px 2px 0px 2px  rgba(0, 0, 0, 0.4);
-  }
+}
 
   
-  .month-indicator {
+.month-indicator {
     color: #FAFAFA;
     max-width: 100%;
     height: 5vh;
+}
 
-  }
-
-  time{
+time{
     position: relative;
     top: 15px;
     display: flex;
     font-weight: 400;
     justify-content: center;
     align-items: center;
-  }
+}
   
 .hari {
-  color: #F26628;
-  
+    color: #F26628;
 }
 
 .keterangan{
-height: 19px;
-width: 180px;
-text-align: center;
-position: relative;
-bottom: 200px;
-left: 340px;
-color: #F26628;
-font-size: 16px;
+    height: 19px;
+    width: 180px;
+    text-align: center;
+    position: relative;
+    bottom: 200px;
+    left: -230px;
+    color: #F26628;
+    font-size: 16px;
 }
 
-  .myBg6{
+.icon20{
+    height: 19px;
+    width: 180px;
+    text-align: center;
+    position: relative;
+    bottom: 158px;
+    left: -290px;
+    color: #F26628;
+    font-size: 16px;
+}
+
+.myBg6{
     max-width: 100%;
     background-color: #FAFAFA;
     height: 32.5vh;
-  }
+}
   
-  .day-of-week,
-  .date-grid {
+.day-of-week,
+.date-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-  }
+}
   
-  .day-of-week {
+.day-of-week {
     position: relative;
     top: 10px;
     margin-top: 1.25em;
-  }
+}
   
-  .day-of-week > * {
+.day-of-week > * {
     font-size: 0.7em;
     color: #0C2434;
     font-weight: 500;
     letter-spacing: 0.1em;
     font-variant: small-caps;
     text-align: center;
-  }
+}
   
   /* Dates */
-  .date-grid {
+.date-grid {
     margin-top: 0.7em;
-  }
+}
   
   /* Positioning the first day */
-  .date-grid button:first-child {
+.date-grid button:first-child {
     grid-column:1;
-  }
+}
   
-  .date-grid button {
+.date-grid button {
     position: relative;
     border: none;
     width: 6.5ch;
@@ -145,55 +164,173 @@ font-size: 16px;
     border-radius: 0;
     background-color: transparent;
     color: #616161;
-  }
+}
   
-  .date-grid button:hover,
-  .date-grid button:focus {
+.date-grid button:hover,
+.date-grid button:focus {
     outline: none;
     color: var(--blue-grey-700);
-  }
+}
   
-  .date-grid button:active,
-  .date-grid button.is-selected {
+.date-grid button:active,
+.date-grid button.is-selected {
     color: var(--teal-900);
-  }
+}
 
-  @media screen and (max-width:1440px) {
-    .myBg5{
-        width: auto;
-        float: none;
-        width: 102%;
+
+@media screen and (min-width: 280px) and (max-width: 700px) {
+    .keterangan{
+        left: 60px;
+        top: 30px;
     }
 
-    .Awan50{
-      left: 1240px;
+    .myBg5{
+        width: 100%;
+        height: 70vh;
+        background-image: url("../../images/pattern3small.png");
+        background-size: cover;
+    }
+
+    .ship{
+        width: 100%;
+        height: 70vh;
+    }
+
+    .icon20{
+        left: 0px;
+        top: 70px;
+    }
+
+    .Awan3{
+        width: 150px;
+        left:-50px;
     }
     
+    .Awan50{
+        width: 200px;
+        left: 250px;
+        top: 20px;
+    }
 }
 
-@media screen and (max-width:1280px) {
-  .myBg5{
-      width: auto;
-      float: none;
-      width: 102%;
-  }
-
-  .Awan50{
-    left: 1060px;
-  }
-  
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .Awan50{
+        left: 350px;
+    }
 }
 
-@media screen and (max-width:1025px) {
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .Awan50{
+        left: 450px;
+    }
+}
 
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .Awan50{
+        left: 550px;
+    }
+}
 
-  .Bg5{
-    width: auto;
-    float: none;
-    width: 190%;
-    height: 29vh;
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .myBg5{
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        
+        background-image: url('../../images/pattern3small.png');
+    }
+
+    .myBg6{
+        height: 33vh;
+    }
+
+    .ship{
+        width: 100%;
+        height: 70vh;
+    }
+
+    .Container{
+        height: 41vh;
+        top: 0px;
+    }
+
+    .keterangan{
+      top: 50px;
+      left: 60px;
+    }
+
+    .icon20{
+        top: 50px;
+        left: 0px;
+    }
+    
+    .Awan50{
+        left: 600px;
+        top: 10px;
+    }
+
+    .Awan3{
+        top: 30px;
+    }
+
+   .Calendar{
     position: relative;
-  }
+    top: -200px;
+   }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+.Awan50{
+    left: 700px;
+}
 }
 
 
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .Awan50{
+        left: 800px;
+    }
+
+    .ship{
+        width: 100%;
+        height: 70vh;
+        
+    }
+    .myBg5{
+        width: 100%;
+        height: 70vh;
+    }
+  
+    }
+
+@media screen and (min-width: 1081px) and (max-width: 1280px) {
+        .Awan50{
+            left: 1000px;
+ }
+
+ .ship{
+    width: 100%;
+    height: 70vh;
+    
+}
+.myBg5{
+    width: 100%;
+    height: 70vh;
+}
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1500px) {
+    .Awan50{
+        left: 1200px;
+}
+
+.ship{
+width: 100%;
+height: 70vh;
+
+}
+.myBg5{
+width: 100%;
+height: 70vh;
+}
+}

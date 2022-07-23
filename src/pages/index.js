@@ -5,10 +5,13 @@ import HeroSection from '../Components/HeroSection';
 import Youtube from '../Components/Youtube';
 import Jjt from '../Components/JJT';
 import KilasFooter from './kilasfooter';
-import Agenda from '../Components/Card';
 import Calender from '../Components/Calender'
-import { homeObjOne } from '../Components/About/Data';
-import AboutSection from '../Components/About';
+import Kartu from './kartu';
+import Mengenai from './mengenai';
+import { motion } from 'framer-motion';
+import Scroll from '../Components/scroll';
+import Store from '../Components/Store';
+
 
 
 
@@ -22,21 +25,24 @@ const Home = () => {
     
   
     return (
-   <>
+    <React.StrictMode>
+   <motion.div initial= "hidden" animate="show">
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
         <HeroSection />
         <Youtube />
-        <AboutSection {...homeObjOne} />
+        <Mengenai />
         <Jjt />
         <Calender />
-        <Agenda />
+        <Kartu />
         <KilasFooter />
-        
-   </>
+        <Scroll />
+   </motion.div>
+   </React.StrictMode>
   )
   
  
 }
 
 export default Home
+

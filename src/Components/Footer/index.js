@@ -39,9 +39,9 @@ const Footer = () => {
                     <FaLine />
                     <FooterLink1 to='/home'> Line </FooterLink1>
                 </SocialIconLink1>
-                <SocialIconLink1 href="/" target="_blank" arial-label="Instagram">
+                <SocialIconLink1 href="/www.instagram.com/ppsmb_kesatria/?hl=id" target="_blank" arial-label="Instagram">
                     <FaInstagram />
-                    <FooterLink2 to='/home'> Instagram </FooterLink2>
+                    <FooterLink2 to='/'> Instagram </FooterLink2>
                 </SocialIconLink1>
                 <SocialIconLink1 href="/" target="_blank" arial-label="YouTube">
                     <FaYoutube />
@@ -49,7 +49,6 @@ const Footer = () => {
                 </SocialIconLink1>
 				</SosialIcons>
                 </FooterLinkItems2>
-
 			</FooterLinksWrapper>
 		</FooterLinksContainer>
 	</FooterWrap>

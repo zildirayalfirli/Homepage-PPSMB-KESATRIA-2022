@@ -1,10 +1,10 @@
 
 import React, {useState} from 'react';
-import {BsChevronUp} from 'react-icons/bs';
+import {FaChevronUp} from 'react-icons/fa';
 import '../scroll/style.css';
 
 
-const ScrollArrow = () =>{
+const ScrollArrow = () => {
 
   const [showScroll, setShowScroll] = useState(false)
 
@@ -24,7 +24,7 @@ const ScrollArrow = () =>{
 
   return (
         <div className='kotak10'>
-        <BsChevronUp className="scrollTop" onClick={scrollTop} style={{height: 40, display: showScroll ? 'flex' : 'none'}}/>
+        <FaChevronUp className="scrollTop" onClick={scrollTop} style={{display: showScroll ? 'flex' : 'none'}}/>
         </div>
   );
 }

@@ -2,41 +2,30 @@ import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 
+
 export const Nav = styled.nav`
-    background: #FAFAFA; 
+    background:${({ scrollNav})  => (scrollNav ? '#FAFAFA' : '#FAFAFA')};
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     font-size: 1rem;
-    top: 0;
+    overflow:hidden;
+    top: -3px;
     z-index: 990;
 
-
-@media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
-}
-
-@media screen and (max-width: 1025px) {
-    transition: 0.8s all ease;
+    
+    @media screen and (min-width: 280px) and (max-width: 700px) {
         width: auto;
-        float: none;
-        width: 120%; 
-}
+    }
 
-@media screen and (max-width: 1281px) {
-    transition: 0.8s all ease;
-    width: 100%;
-    display: flex;
-}
+    @media screen and (min-width: 801px) and (max-width: 1000px) {
+        width: auto;
+    }
+  
 
-
-@media screen and (max-width: 1440px) {
-    transition: 0.8s all ease;
-    width: 102%;
-    display: flex;
-}
+    
 `;
 
 export const NavbarContainer =styled.div`
@@ -57,31 +46,39 @@ export const NavBrand = styled(LinkR)`
     font-size: 1.5rem;
     font-weight: 200;
     display: flex;
-    margin-left: 85px;
+    position: relative;
+    left: 90px;
     align-items: center;
     text-decoration: none;
-    
-    @media screen and (max-width: 480px) {
-        font-size: 1.2rem;
-        margin-left: 75px;
+
+    @media screen and (min-width: 280px) and (max-width: 700px) {
+       font-size: 1rem;
+        
+        position: relative;
+        top: -5px;
     }
 
+    @media screen and (max-width: 340px)
+{
+    display: none;
+}
 
 `
 
 export const NavLogo = styled.image`
-position: absolute;
-width: 64px;
-height: 64px;
-left: 35px;
-top: 6px;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 35px;
+    top: 6px;
+
 `
 
 export const MobileIcon = styled.div`
-display: none;
+    display: none;
 
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1100px) {
     display: block;
     position: absolute;
     top: 0;
@@ -94,21 +91,30 @@ display: none;
 `
 
 export const NavMenu = styled.ul`
-display: flex;
-align-items: center;
-list-style: none;
-text-align: center;
-margin-right: -400px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -400px;
 
 
-@media screen and (max-width: 885px) {
-    display: none;
-}
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
+    @media screen and (min-width: 1001px) and (max-width: 1200px) {
+        margin-right: -100px;
+    }
+    @media screen and (min-width: 1201px) and (max-width: 1280px) {
+        margin-right: -50px;
+    }
 
-@media screen and (max-width: 1280px) {
-    margin-right: -230px;
+    @media screen and (min-width: 1280px) and (max-width: 1380px) {
+        margin-right: -50px;
+    }
+    @media screen and (min-width: 1380px) and (max-width: 1495px) {
+        margin-right: -50px;
+    }
 
-}
 `
 
 export const NavItem = styled.li`
@@ -126,25 +132,31 @@ export const NavLinks = styled(LinkS)`
 
     &.active {
         border-bottom: 3px solid #95DACB;
-}
+    }
 
-@media screen and (max-width: 1280px) {
-    padding: 0 1.5rem;
+    @media screen and (min-width: 1001px) and (max-width: 1200px) {
+        padding: 0 1rem;
+    }
 
-}
+    @media screen and (min-width: 1001px) and (max-width: 1495px) {
+        padding: 0 1.3rem;
+    }
+
+    
+  
+
 `
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
-
-    @media screen and (max-width: 885px){
+    @media screen and (max-width: 1100px) {
         display: none;
     }
 
-    @media screen and (max-width: 1280px) {
-        margin-right: 20px;
     
-    }
+  
+
+
 `
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
@@ -165,4 +177,8 @@ export const NavBtnLink = styled(LinkR)`
         background: #fff;
         color: #010606;
     }
+
+    
 `
+
+

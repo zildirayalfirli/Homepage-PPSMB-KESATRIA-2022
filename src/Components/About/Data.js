@@ -15,6 +15,7 @@ export const homeObjOne ={
     img5: require('../../images/logo_7.png'),
     img6: require('../../images/logo_8.png'),
     img8: require('../../images/awan4.png'),
+    img99: require('../../images/awan3.png'),
     dark: true,
     primary: true,
     darkText: false

@@ -24,6 +24,9 @@ const Sidebar = ({ isOpen, toggle}) => {
             <SidebarLink to='kilasbalik' onClick={toggle}>
                 Kilas Balik
             </SidebarLink>
+            <SidebarLink to='teknikstore' onClick={toggle}>
+                Teknik Store
+            </SidebarLink>
         </SidebarMenu>
         <SidebarBtnWrap>
             <SidebarRoute to='/absen'>Absen</SidebarRoute>

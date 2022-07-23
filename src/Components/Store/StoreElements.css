@@ -1,0 +1,47 @@
+
+.kotak19{
+    position: absolute;
+    background-color: white;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 55px;
+    right: 60px;
+    bottom: 400px;
+    font-weight: 900;
+    align-items: left;
+    height: 60px;
+    justify-content: flex-end;
+    z-index: 100;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 5;
+    font-size: 50px;
+    color: #F8A36C ;
+}
+
+.store1{
+    color: #F8A36C;
+}
+
+.store1:hover{
+    transform: scale(1.05) ;
+    transition: all 0.2s 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 280px) and (max-width: 600px) {
+    .kotak19{
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        top: 230px;
+    }
+
+    .store1{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: -15px;
+    }
+  }

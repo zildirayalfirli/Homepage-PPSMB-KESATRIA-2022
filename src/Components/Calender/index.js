@@ -1,16 +1,43 @@
 import React from 'react'
 import "../Calender/CalenderElements.css"
 import awan50 from "../../images/awan6.png"
+import {VscDebugStackframeDot } from "react-icons/vsc";
+import awan3 from "../../images/awan5.png"
+import {youtube1Animation, youtube2Animation } from "../../animation";
+import { motion } from "framer-motion";
+import { useScroll } from "../UseScroll/useScroll";
 
 function Calender() {
+  const [element, controls] = useScroll();
 return (
 <div class='myBg5' id='calender'>
-<div class='ship'>
-<div className='Awan50'>
-              <img src={awan50} />
-        </div>
-<div className='Container'>
-<div class="calendar">
+  <div class='ship' ref={element}>
+    <motion.div className='Awan50'
+      variants={youtube2Animation}  
+      animate={controls}
+      transition={{
+      delay: 0.5,
+      type: "tween",
+      duration: 1.8,
+      }}
+    >
+    <img src={awan50} />
+    </motion.div>
+
+    <motion.div className='Awan3'
+    variants={youtube1Animation}  
+    animate={controls}
+    transition={{
+    delay: 0.5,
+    type: "tween",
+    duration: 1.8,
+    }}
+    >
+    <img src={awan3} />
+    </motion.div>
+
+    <div className='Container'>
+    <div class="calendar">
     <div class="month-indicator">
       <time> Agustus 2022 </time>
     </div>
@@ -133,9 +160,10 @@ return (
   </div>
 
     <div className='keterangan'>
-      - PPSMB KESATRIA 2022
+       PPSMB KESATRIA 2022
     </div>
     </div>
+    <VscDebugStackframeDot className='icon20'></VscDebugStackframeDot>
   </div>
 </div>
   )
